@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> She Code Africa Chuka</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+
+<style>
+    body {
+      font-family:'Poppins', Poppins;
+      background-color: color-mix(in srgb-linear, #ffff 40%, #ea16ea 10%);
+      text-align:center;
+      padding: auto;
+
+      
+    }
+    
+    </style>
+    </head>
+    <body>
+        <div class="w3-top">
+          <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="download.jpg" width="10%"></a>
+            <div class="w3-right w3-hide-small">
+              <a href="#about" class="w3-bar-item w3-button">About</a>
+              <a href="#events" class="w3-bar-item w3-button"><i class="events"></i> Events</a>
+              <a href="#news" class="w3-bar-item w3-button"><i class="news"></i> News</a>
+              <a href="#meet our leaders" class="w3-bar-item w3-button"><i class="meet our leads"></i> Meet our leaders</a>
+              <a href="#testimonials" class="w3-bar-item w3-button"><i class="testimony"></i> Testimonials</a>
+              </div>
+            
+              <hr>
+        <div class = "mid ">
+        
+            <h1><b> Empowering Women In Tech Across Africa</b></h1>
+            <p>She Code Africa Chuka Chapter is part of the large She Code Africa which is a registered non-profit organization dedicated to empowering and celebrating girls and women in technology across Africa</p>
+            <button  id = "mbt" title ="Become a member" > Become a member</button>
+            <div id ="signupModal" class = "modal">
+              <div class = "modal-cont">
+                <span class = "close">&times;</span>
+                <h2>Sign up</h2>
+                <form>
+                  <label for= "username">Username:</label>
+                  <input type = "text" id=" username" name = "username" required><br><br>
+                  <label for= "email">email:</label>
+                  <input type = "email" id=" email" name = "email" required><br><br>
+                  <label for= "password">password:</label>
+                  <input type = "password" id=" password" name = "password" required><br><br>
+                  <input type ="submit" value = "Submit">
+
+                </form>
+              </div>
+            </div>
+            <button onclick = "topfunction()" id = "mbtu" title ="Become a member" >Donate</button> 
+            <section>
+        <img class="mySlides" src="IMG-20240306-WA0013 (1).jpg" style="width:100%">
+        <img class="mySlides" src="IMG-20240306-WA0014(1) (1).jpg" style="width:100%">
+      
+      </section>
+      <script>
+        var modal = document.getElementById("signupModal");
+        var btn = document.getElementById("mbt");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function(){
+          modal.style.display = "block";
+      
+        }
+        span.onclick = function(){
+          modal.style.display= "none";
+        }
+        window.onclick = function(event){
+          if (event.target = modal){
+            modal.style.display = "none";
+          }
+        }
+      </script>
+      <script>
+var myIndex = 0;
+coursel();
+
+function coursel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(coursel, 3000);
+}
+</script>
+
+</body>
+
+</html>
